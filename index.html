@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Car Audio Installation - Custom Subwoofer Boxes, Premium Brands, Expert Installation">
+    <title>IntakeHQ - Professional Car Audio Installation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            padding: 1rem 5%;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #ff0000;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff0000;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        nav .nav-links a:hover {
+            color: #ff0000;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #000 0%, #1a0000 100%);
+            position: relative;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,0,0,0.1) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            padding: 0 2rem;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            background: linear-gradient(45deg, #ff0000, #ff6666);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ccc;
+            font-weight: 300;
+        }
+
+        .hero .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            color: #999;
+            font-style: italic;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: #ff0000;
+            color: #fff;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
+
+        .btn-primary:hover {
+            background: #cc0000;
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .btn-secondary:hover {
+            background: #fff;
+            color: #000;
+            transform: translateY(-3px);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 span {
+            color: #ff0000;
+        }
+
+        /* Brands Section */
+        .brands {
+            background: #0a0a0a;
+        }
+
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .brand-card {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .brand-card:hover {
+            transform: translateY(-10px);
+            border-color: #ff0000;
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+        }
+
+        .brand-card h3 {
+            font-size: 1.8rem;
+            color: #ff0000;
+            margin-bottom: 0.5rem;
+        }
+
+        .brand-card p {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        /* Services Section */
+        .services {
+            background: #000;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #1a0000 0%, #0a0a0a 100%);
+            padding: 2.5rem;
+            border-radius: 15px;
+            border: 2px solid #ff0000;
+            transition: all 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(255, 0, 0, 0.4);
+        }
+
+        .service-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #ff0000;
+        }
+
+        .service-card .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card ul li {
+            padding: 0.5rem 0;
+            color: #ccc;
+            border-bottom: 1px solid #333;
+        }
+
+        .service-card ul li:before {
+            content: "✓ ";
+            color: #ff0000;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        /* Raffle Section */
+        .raffle {
+            background: linear-gradient(135deg, #1a0000 0%, #000 100%);
+            text-align: center;
+        }
+
+        .raffle-box {
+            background: #0a0a0a;
+            border: 3px solid #ff0000;
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 0 50px rgba(255, 0, 0, 0.3);
+        }
+
+        .raffle-box h3 {
+            font-size: 2.5rem;
+            color: #ff0000;
+            margin-bottom: 1rem;
+        }
+
+        .raffle-box .prize {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+
+        .raffle-box .value {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff0000;
+            margin-bottom: 2rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #0a0a0a;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid #ff0000;
+        }
+
+        .contact-info h3 {
+            color: #ff0000;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 1rem;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+
+        .contact-form {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid #ff0000;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #ff0000;
+        }
+
+        .contact-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 2rem 5%;
+            border-top: 2px solid #ff0000;
+        }
+
+        footer p {
+            color: #666;
+        }
+
+        /* AI Recommendation Widget */
+        .ai-recommendation {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(255, 0, 0, 0.5);
+            max-width: 350px;
+            z-index: 999;
+            animation: slideInRight 0.5s ease-out;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .ai-recommendation:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(255, 0, 0, 0.7);
+        }
+
+        .ai-recommendation.hidden {
+            display: none;
+        }
+
+        .ai-recommendation h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .ai-recommendation p {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .ai-recommendation .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .ai-recommendation .close-btn:hover {
+            opacity: 1;
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Chat Widget */
+        .chat-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .chat-button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(255, 0, 0, 0.5);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chat-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(255, 0, 0, 0.7);
+        }
+
+        .chat-button.active {
+            background: #666;
+        }
+
+        .chat-box {
+            position: absolute;
+            bottom: 80px;
+            right: 0;
+            width: 350px;
+            height: 500px;
+            background: #1a1a1a;
+            border: 2px solid #ff0000;
+            border-radius: 15px;
+            display: none;
+            flex-direction: column;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .chat-box.active {
+            display: flex;
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            padding: 1rem;
+            border-radius: 13px 13px 0 0;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 1rem;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .chat-message {
+            padding: 0.75rem 1rem;
+            border-radius: 10px;
+            max-width: 80%;
+            animation: fadeIn 0.3s;
+        }
+
+        .chat-message.bot {
+            background: #2a2a2a;
+            align-self: flex-start;
+            border: 1px solid #ff0000;
+        }
+
+        .chat-message.user {
+            background: #ff0000;
+            align-self: flex-end;
+            color: #fff;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .chat-input-area {
+            padding: 1rem;
+            border-top: 1px solid #333;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 0.75rem;
+            background: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        .chat-input:focus {
+            outline: none;
+            border-color: #ff0000;
+        }
+
+        .chat-send {
+            padding: 0.75rem 1.5rem;
+            background: #ff0000;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .chat-send:hover {
+            background: #cc0000;
+        }
+
+        /* Pricing Configurator */
+        .configurator {
+            background: #0a0a0a;
+            padding: 3rem;
+            border-radius: 20px;
+            border: 2px solid #ff0000;
+            margin: 3rem auto;
+            max-width: 800px;
+        }
+
+        .configurator h3 {
+            color: #ff0000;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .config-option {
+            margin-bottom: 2rem;
+        }
+
+        .config-option label {
+            display: block;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .config-option select {
+            width: 100%;
+            padding: 1rem;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .config-option select:focus {
+            outline: none;
+            border-color: #ff0000;
+        }
+
+        .config-total {
+            background: linear-gradient(135deg, #1a0000 0%, #0a0a0a 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid #ff0000;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .config-total h4 {
+            color: #fff;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .config-total .total-price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff0000;
+            margin-bottom: 1rem;
+        }
+
+        .config-total .savings {
+            color: #0f0;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .ai-recommendation {
+                right: 15px;
+                left: 15px;
+                max-width: none;
+            }
+
+            .chat-box {
+                width: calc(100vw - 30px);
+                right: 15px;
+            }
+
+            .configurator {
+                padding: 1.5rem;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1rem;
+            }
+
+            nav .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">INTAKEHQ</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#brands">Brands</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#raffle">Raffle</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>🔊 FEEL THE BASS 🔊</h1>
+            <p class="tagline">Professional Car Audio Installation</p>
+            <p class="subtitle">Custom Boxes. Expert Wiring. Premium Brands.</p>
+            <div class="cta-buttons">
+                <a href="#raffle" class="btn btn-primary">Enter Raffle - Win Free System!</a>
+                <a href="#contact" class="btn btn-secondary">Get Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Recommendation Widget -->
+    <div class="ai-recommendation hidden" id="aiRecommendation">
+        <button class="close-btn" onclick="closeRecommendation()">&times;</button>
+        <h4>🤖 AI Recommendation</h4>
+        <p id="recommendationText">Need car audio tuning? Start here.</p>
+        <a href="#" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.5rem 1rem;" id="recommendationAction">Learn More</a>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <button class="chat-button" id="chatButton" onclick="toggleChat()">
+            💬
+        </button>
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                🔊 IntakeHQ Assistant
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot">
+                    Hey! 👋 Looking to upgrade your car audio? I can help you find the perfect setup!
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" class="chat-input" id="chatInput" placeholder="Ask about bass, speakers, pricing..." onkeypress="handleChatEnter(event)">
+                <button class="chat-send" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brands Section -->
+    <section id="brands" class="brands fade-in">
+        <h2>Premium <span>Brands</span></h2>
+        <div class="brands-grid">
+            <div class="brand-card">
+                <h3>SUNDOWN AUDIO</h3>
+                <p>Competition-Level Power</p>
+            </div>
+            <div class="brand-card">
+                <h3>KICKER</h3>
+                <p>Legendary Reliability</p>
+            </div>
+            <div class="brand-card">
+                <h3>MEMPHIS AUDIO</h3>
+                <p>Quality Sound</p>
+            </div>
+            <div class="brand-card">
+                <h3>SKAR AUDIO</h3>
+                <p>Power on a Budget</p>
+            </div>
+            <div class="brand-card">
+                <h3>JL AUDIO</h3>
+                <p>Premium Excellence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Configurator -->
+    <section class="services">
+        <h2>Build Your <span>Custom System</span></h2>
+        <div class="configurator fade-in">
+            <h3>🎛️ System Configurator</h3>
+            
+            <div class="config-option">
+                <label for="subType">Subwoofer Type:</label>
+                <select id="subType" onchange="updatePrice()">
+                    <option value="0">No Subwoofer</option>
+                    <option value="250">Single 10" ($250)</option>
+                    <option value="300">Single 12" ($300)</option>
+                    <option value="500">Dual 12" ($500)</option>
+                    <option value="800">Competition Setup ($800)</option>
+                </select>
+            </div>
+
+            <div class="config-option">
+                <label for="ampType">Amplifier:</label>
+                <select id="ampType" onchange="updatePrice()">
+                    <option value="0">No Amplifier</option>
+                    <option value="150">500W Amp ($150)</option>
+                    <option value="250">1200W Amp ($250)</option>
+                    <option value="400">2000W+ Competition Amp ($400)</option>
+                </select>
+            </div>
+
+            <div class="config-option">
+                <label for="boxType">Enclosure:</label>
+                <select id="boxType" onchange="updatePrice()">
+                    <option value="0">No Box</option>
+                    <option value="100">Prefab Box ($100)</option>
+                    <option value="200">Custom Sealed Box ($200)</option>
+                    <option value="300">Custom Ported Box ($300)</option>
+                    <option value="600">Fiberglass Custom ($600)</option>
+                </select>
+            </div>
+
+            <div class="config-option">
+                <label for="speakers">Speakers:</label>
+                <select id="speakers" onchange="updatePrice()">
+                    <option value="0">Keep Stock Speakers</option>
+                    <option value="200">Component Speakers ($200)</option>
+                    <option value="350">Premium Components + Amp ($350)</option>
+                </select>
+            </div>
+
+            <div class="config-option">
+                <label for="extras">Extras:</label>
+                <select id="extras" onchange="updatePrice()">
+                    <option value="0">None</option>
+                    <option value="100">Sound Deadening ($100)</option>
+                    <option value="150">LED Lighting ($150)</option>
+                    <option value="250">Both ($250)</option>
+                </select>
+            </div>
+
+            <div class="config-total">
+                <h4>Your Custom System:</h4>
+                <div class="total-price" id="totalPrice">$0</div>
+                <div class="savings" id="savings"></div>
+                <a href="#contact" class="btn btn-primary">Get This Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services slide-in-left">
+        <h2>Installation <span>Packages</span></h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>STARTER BASS</h3>
+                <p class="price">$449</p>
+                <ul>
+                    <li>Single 10" or 12" Subwoofer</li>
+                    <li>500W Amplifier</li>
+                    <li>Custom Sealed Box</li>
+                    <li>Professional Installation</li>
+                    <li>Wire Kit Included</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <div class="service-card">
+                <h3>SERIOUS BASS</h3>
+                <p class="price">$849</p>
+                <ul>
+                    <li>Dual 12" Subwoofers</li>
+                    <li>1200W Amplifier</li>
+                    <li>Custom Ported Box</li>
+                    <li>Professional Installation</li>
+                    <li>Premium Wire Kit</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <div class="service-card">
+                <h3>COMPETITION LEVEL</h3>
+                <p class="price">$1499+</p>
+                <ul>
+                    <li>Premium Subwoofers (Your Choice)</li>
+                    <li>High-End Amplifier</li>
+                    <li>Custom Fiberglass Enclosure</li>
+                    <li>Professional Tuning</li>
+                    <li>Show-Quality Finish</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <div class="service-card">
+                <h3>HIGHS UPGRADE</h3>
+                <p class="price">$699</p>
+                <ul>
+                    <li>Component Speakers (Front)</li>
+                    <li>4-Channel Amplifier</li>
+                    <li>Crossovers</li>
+                    <li>Professional Installation</li>
+                    <li>Sound Deadening Included</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Raffle Section -->
+    <section id="raffle" class="raffle">
+        <h2>Monthly <span>Raffle</span></h2>
+        <div class="raffle-box">
+            <h3>🎟️ WIN A FREE AUDIO SYSTEM! 🎟️</h3>
+            <p class="prize">Choose: Bass System OR Highs Upgrade</p>
+            <p class="value">$800-1000 VALUE</p>
+            <p style="color: #ccc; margin-bottom: 2rem;">Tickets: $10 each | 3 for $25 | 10 for $75</p>
+            <p style="color: #ff0000; font-weight: bold; margin-bottom: 2rem;">Next Drawing: [DATE]</p>
+            <a href="#contact" class="btn btn-primary">Buy Tickets Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In <span>Touch</span></h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>📍 Location</h3>
+                <p>[Your Address]</p>
+                <p>[City, State ZIP]</p>
+                
+                <h3 style="margin-top: 2rem;">📞 Phone</h3>
+                <p>[Your Phone Number]</p>
+                
+                <h3 style="margin-top: 2rem;">⏰ Hours</h3>
+                <p>Monday - Friday: 9AM - 6PM</p>
+                <p>Saturday: 10AM - 4PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+
+            <div class="contact-form">
+                <h3 style="color: #ff0000; margin-bottom: 1.5rem;">Request a Quote</h3>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Your Phone" required>
+                    <textarea name="message" placeholder="Tell us about your project..." required></textarea>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 IntakeHQ. Professional Car Audio Installation. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll-based animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // AI Recommendation System
+        const recommendations = [
+            {
+                trigger: 2000,
+                text: "🎵 First time upgrading? Start with our Starter Bass package!",
+                action: "#services",
+                shown: false
+            },
+            {
+                trigger: 5000,
+                text: "🔥 Want competition-level bass? Check out our premium systems!",
+                action: "#services",
+                shown: false
+            },
+            {
+                trigger: 8000,
+                text: "🎟️ Don't forget - enter our raffle to WIN a free system!",
+                action: "#raffle",
+                shown: false
+            }
+        ];
+
+        let currentRecommendation = 0;
+        let scrollDepth = 0;
+
+        window.addEventListener('scroll', () => {
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            scrollDepth = Math.max(scrollDepth, (scrollTop + windowHeight) / documentHeight);
+
+            // Show recommendations based on scroll depth
+            if (scrollDepth > 0.3 && currentRecommendation === 0) {
+                showRecommendation(0);
+                currentRecommendation = 1;
+            } else if (scrollDepth > 0.6 && currentRecommendation === 1) {
+                showRecommendation(1);
+                currentRecommendation = 2;
+            }
+        });
+
+        // Time-based recommendations
+        setTimeout(() => {
+            if (currentRecommendation === 0) {
+                showRecommendation(2);
+            }
+        }, 10000);
+
+        function showRecommendation(index) {
+            const rec = recommendations[index];
+            if (!rec || rec.shown) return;
+            
+            const widget = document.getElementById('aiRecommendation');
+            const text = document.getElementById('recommendationText');
+            const action = document.getElementById('recommendationAction');
+            
+            text.textContent = rec.text;
+            action.href = rec.action;
+            widget.classList.remove('hidden');
+            rec.shown = true;
+            
+            // Auto-hide after 10 seconds
+            setTimeout(() => {
+                widget.classList.add('hidden');
+            }, 10000);
+        }
+
+        function closeRecommendation() {
+            document.getElementById('aiRecommendation').classList.add('hidden');
+        }
+
+        // Chat System with Intent Detection
+        let chatOpen = false;
+
+        function toggleChat() {
+            chatOpen = !chatOpen;
+            const chatBox = document.getElementById('chatBox');
+            const chatButton = document.getElementById('chatButton');
+            
+            if (chatOpen) {
+                chatBox.classList.add('active');
+                chatButton.classList.add('active');
+                chatButton.textContent = '✕';
+            } else {
+                chatBox.classList.remove('active');
+                chatButton.classList.remove('active');
+                chatButton.textContent = '💬';
+            }
+        }
+
+        function handleChatEnter(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            
+            // Add user message
+            addChatMessage(message, 'user');
+            input.value = '';
+            
+            // Detect intent and respond
+            setTimeout(() => {
+                const response = detectIntent(message);
+                addChatMessage(response, 'bot');
+            }, 500);
+        }
+
+        function addChatMessage(text, sender) {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `chat-message ${sender}`;
+            messageDiv.textContent = text;
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function detectIntent(message) {
+            const msg = message.toLowerCase();
+            
+            // Pricing intent
+            if (msg.includes('price') || msg.includes('cost') || msg.includes('how much')) {
+                return "Our packages start at $449 for Starter Bass! Check out the configurator above to build your custom system and see exact pricing. Want me to recommend a package?";
+            }
+            
+            // Bass/subwoofer intent
+            if (msg.includes('bass') || msg.includes('sub') || msg.includes('woofer')) {
+                return "🔊 Looking for bass? We offer everything from single 10\" setups ($449) to competition-level dual 12\" systems ($1499+). What's your budget and vehicle type?";
+            }
+            
+            // Speaker intent
+            if (msg.includes('speaker') || msg.includes('highs') || msg.includes('component')) {
+                return "🎵 For speakers, our Highs Upgrade package ($699) includes component speakers, 4-channel amp, and sound deadening. Perfect for crystal-clear sound!";
+            }
+            
+            // Brand intent
+            if (msg.includes('brand') || msg.includes('kicker') || msg.includes('sundown') || msg.includes('skar') || msg.includes('jl')) {
+                return "We carry premium brands: Sundown Audio (competition power), Kicker (reliability), Skar Audio (budget beast), Memphis Audio (quality), and JL Audio (premium). What's your preference?";
+            }
+            
+            // Installation intent
+            if (msg.includes('install') || msg.includes('how long') || msg.includes('appointment')) {
+                return "Most installs take 2-4 hours depending on complexity. We can usually schedule within 2-3 days. Want to book an appointment? Click 'Get Quote' and we'll reach out!";
+            }
+            
+            // Raffle intent
+            if (msg.includes('raffle') || msg.includes('win') || msg.includes('free')) {
+                return "🎟️ Our monthly raffle gives you a chance to WIN a free system worth $800-1000! Tickets are $10 each, or 3 for $25. Next drawing coming soon!";
+            }
+            
+            // Default response
+            return "I can help with pricing, packages, brands, installation, or our raffle! What would you like to know more about?";
+        }
+
+        // Pricing Configurator
+        function updatePrice() {
+            const subType = parseInt(document.getElementById('subType').value) || 0;
+            const ampType = parseInt(document.getElementById('ampType').value) || 0;
+            const boxType = parseInt(document.getElementById('boxType').value) || 0;
+            const speakers = parseInt(document.getElementById('speakers').value) || 0;
+            const extras = parseInt(document.getElementById('extras').value) || 0;
+            
+            const subtotal = subType + ampType + boxType + speakers + extras;
+            const installation = subtotal > 0 ? 150 : 0;
+            const total = subtotal + installation;
+            
+            // Calculate savings (10% off if total > $800)
+            let savings = 0;
+            let finalTotal = total;
+            if (total > 800) {
+                savings = Math.round(total * 0.1);
+                finalTotal = total - savings;
+            }
+            
+            document.getElementById('totalPrice').textContent = '$' + finalTotal;
+            
+            if (savings > 0) {
+                document.getElementById('savings').textContent = `💰 You save $${savings} (10% bundle discount!)`;
+            } else {
+                document.getElementById('savings').textContent = total > 800 ? '' : '💡 Spend $800+ to unlock 10% bundle discount!';
+            }
+        }
+
+        // Initialize
+        updatePrice();
+    </script>
+</body>
+</html>
